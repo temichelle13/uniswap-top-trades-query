@@ -129,8 +129,9 @@ This project demonstrates how to interact with The Graph's GraphQL endpoint to f
 ## Dependencies
 axios: A promise-based HTTP client for Node.js
 dotenv: Module to load environment variables from a .env file
-Repository
+
+## Repository
 Visit the GitHub repository to explore the project.
 
-License
+## License
 This project is licensed under the MIT License.
