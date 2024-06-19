@@ -1,0 +1,17 @@
+query TopTrades {
+  swaps(first: 10, orderBy: amountUSD, orderDirection: desc) {
+    id
+    amountUSD
+    transaction {
+      id
+    }
+    pair {
+      token0 {
+        symbol
+      }
+      token1 {
+        symbol
+      }
+    }
+  }
+}
