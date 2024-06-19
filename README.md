@@ -127,8 +127,8 @@ Trade ID: 0x97a6234a8eb09a6f193d1488e94c2262a8e7ee34b0e84afdbdbbe7e2bc1b7739-0
 This project demonstrates how to interact with The Graph's GraphQL endpoint to fetch data from a subgraph. The provided query fetches the top 10 trades by volume from the Uniswap V2 subgraph on the Arbitrum network.
 
 ## Dependencies
-axios: A promise-based HTTP client for Node.js
-dotenv: Module to load environment variables from a .env file
+- `axios:` A promise-based HTTP client for Node.js
+- `dotenv:` Module to load environment variables from a .env file
 
 ## Repository
 Visit the GitHub repository to explore the project.
