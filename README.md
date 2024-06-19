@@ -31,7 +31,7 @@ To query the top 10 trades by volume on the Uniswap V2 subgraph, follow these st
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/temichelle13/uniswap-top-trades-query.git
+   git clone https://github.com/temichelle13/uniswap-top-trades-query
    cd uniswap-top-trades-query
    ```
 2. **Install Dependencies**:
@@ -39,22 +39,13 @@ To query the top 10 trades by volume on the Uniswap V2 subgraph, follow these st
    npm install axios
    ```
 3. **Set Up Environment Variables**:
-   Create a `.env` file in the root of the project and add your API key
-     -  Open your favorite text editor, create a new file, add your API key:
-        ```bash
-        GRAPH_API_KEY={{your-api-key-here}}
-     - Save the file
+   - CHange the `.env.example` file to a `.env` file in the root of the project and add your API key.
+   - Save the file.
   
-## Running the Script
+### Running the Script
 Run the script to query the subgraph and print the formatted results:
   ```bash
 node query.js
 ```
-## Additional Notes
-This project demonstrates how to interact with The Graph's GraphQL endpoint to fetch data from a subgraph. The provided query fetches the top 10 trades by volume from the Uniswap V2 subgraph on the Arbitrum network.
-
-### Dependencies
-axios: A promise-based HTTP client for Node.js
-dotenv: Module to load environment variables from a .env file
 ### License
 This project is licensed under the MIT License.
