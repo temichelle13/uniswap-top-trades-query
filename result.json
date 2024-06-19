@@ -1,0 +1,21 @@
+{
+  "data": {
+    "swaps": [
+      {
+        "id": "0x...",
+        "amountUSD": "5000000",
+        "transaction": {
+          "id": "0x..."
+        },
+        "pair": {
+          "token0": {
+            "symbol": "DAI"
+          },
+          "token1": {
+            "symbol": "USDC"
+          }
+        }
+      }
+    ]
+  }
+}
