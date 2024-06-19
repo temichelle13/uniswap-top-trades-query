@@ -1,0 +1,15 @@
+{
+  "name": "uniswap-top-trades-query",
+  "version": "1.0.0",
+  "description": "This query retrieves the top 10 trades by volume on the Uniswap subgraph, providing insights into the most significant trades.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}
