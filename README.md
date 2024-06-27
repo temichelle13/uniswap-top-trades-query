@@ -9,7 +9,7 @@ By analyzing the top trades by volume, users can gain insights into the most sig
 ## Subgraph to Query
 
 The subgraph queried in this project is the Uniswap V2 subgraph deployed on the Arbitrum network.
-[Query URL](https://gateway-arbitrum.network.thegraph.com/api/[api-key]/subgraphs/id/EYCKATKGBKLWvSfwvBjzfCBmGwYNdVkduYXVivCsLRFu)
+[Query URL]:https://gateway-arbitrum.network.thegraph.com/api/[api-key]/subgraphs/id/EYCKATKGBKLWvSfwvBjzfCBmGwYNdVkduYXVivCsLRFu
 
 ## Querying the Uniswap Subgraph
 
