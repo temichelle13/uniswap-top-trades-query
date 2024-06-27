@@ -132,6 +132,3 @@ This project demonstrates how to interact with The Graph's GraphQL endpoint to f
 
 ## Repository
 Visit the GitHub repository to explore the project.
-
-## License
-This project is licensed under the MIT License.
