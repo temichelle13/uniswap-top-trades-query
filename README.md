@@ -39,7 +39,7 @@ To query the top 10 trades by volume on the Uniswap V2 subgraph, follow these st
    npm install axios
    ```
 3. **Set Up Environment Variables**:
-   - CHange the `.env.example` file to a `.env` file in the root of the project and add your API key.
+   - Change the `.env.example` file to a `.env` file in the root of the project and add your API key.
    - Save the file.
   
 ### Running the Script
