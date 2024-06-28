@@ -41,12 +41,15 @@ To query the top 10 trades by volume on the Uniswap V2 subgraph, follow these st
 3. **Set Up Environment Variables**:
    - Change the `.env.example` file to a `.env` file in the root of the project and add your API key.
    - Save the file.
-  
+
 ### Running the Script
+
 Run the script to query the subgraph and print the formatted results:
-  ```bash
+
+```bash
 node query.js
 ```
+
 ## Example Query
 
 ```graphql
@@ -70,7 +73,9 @@ query TopTrades {
 ```
 
 ## Result of Example Query
+
 ### Here is a sample output of the query results:
+
 ```
 Trade ID: 0x76f2546586ac5b1ba522babaa5fbbd9e65ca2047f39497b6b277a08da35cb152-27
   Transaction ID: 0x76f2546586ac5b1ba522babaa5fbbd9e65ca2047f39497b6b277a08da35cb152
@@ -123,12 +128,16 @@ Trade ID: 0x97a6234a8eb09a6f193d1488e94c2262a8e7ee34b0e84afdbdbbe7e2bc1b7739-0
   Pair: $MONG / MING
 ---------------------------------------
 ```
+
 ## Additional Notes
+
 This project demonstrates how to interact with The Graph's GraphQL endpoint to fetch data from a subgraph. The provided query fetches the top 10 trades by volume from the Uniswap V2 subgraph on the Arbitrum network.
 
 ## Dependencies
+
 - `axios:` A promise-based HTTP client for Node.js
 - `dotenv:` Module to load environment variables from a .env file
 
 ## Repository
+
 Visit the GitHub repository to explore the project.
