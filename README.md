@@ -9,7 +9,7 @@ By analyzing the top trades by volume, users can gain insights into the most sig
 ## Subgraph to Query
 
 The subgraph queried in this project is the Uniswap V2 subgraph deployed on the Arbitrum network.
-[Query URL]:https://gateway-arbitrum.network.thegraph.com/api/[api-key]/subgraphs/id/EYCKATKGBKLWvSfwvBjzfCBmGwYNdVkduYXVivCsLRFu
+The query URL is: https://gateway-arbitrum.network.thegraph.com/api/[GRAPH_API_KEY]/subgraphs/id/EYCKATKGBKLWvSfwvBjzfCBmGwYNdVkduYXVivCsLRFu
 
 ## Querying the Uniswap Subgraph
 
@@ -39,7 +39,8 @@ To query the top 10 trades by volume on the Uniswap V2 subgraph, follow these st
    npm install axios
    ```
 3. **Set Up Environment Variables**:
-   - Change the `.env.example` file to a `.env` file in the root of the project and add your API key.
+   - Change the `.env.example` file to a `.env` file in the root of the project.
+   - Edit the file in a notepad or similar text editor, adding your api key to the file, replacing the [GRAPH_API_KEY] placeholders.
    - Save the file.
   
 ### Running the Script
