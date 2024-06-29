@@ -1,6 +1,6 @@
 const axios = require('axios');
+require('dotenv').config(); // Make sure to install and configure dotenv if using environment variables
 
-// GraphQL query to fetch top 10 trades by volume
 const query = `
   query TopTrades {
     swaps(first: 10, orderBy: amountUSD, orderDirection: desc) {
@@ -21,7 +21,6 @@ const query = `
   }
 `;
 
-// Function to fetch top trades from the Uniswap subgraph
 const fetchTopTrades = async () => {
   try {
     const response = await axios.post(
@@ -37,6 +36,11 @@ const fetchTopTrades = async () => {
       }
     );
 
+    if (response.data.errors) {
+      console.error('GraphQL Errors:', response.data.errors);
+      return;
+    }
+
     const trades = response.data.data.swaps;
     trades.forEach(trade => {
       const token0Symbol = trade.pair.token0.symbol === 'unknown' ? 'Unknown Token' : trade.pair.token0.symbol;
@@ -49,9 +53,15 @@ const fetchTopTrades = async () => {
       console.log('---------------------------------------');
     });
   } catch (error) {
-    console.error('Error fetching data:', error);
+    if (error.response) {
+      console.error('Error Response:', error.response.data);
+    } else if (error.request) {
+      console.error('No Response:', error.request);
+    } else {
+      console.error('Axios Error:', error.message);
+    }
+    console.error('Error Config:', error.config);
   }
 };
 
-// Execute the function to fetch data
 fetchTopTrades();
