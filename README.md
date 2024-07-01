@@ -9,7 +9,7 @@ By analyzing the top trades by volume, users can gain insights into the most sig
 ## Subgraph to Query
 
 The subgraph queried in this project is the Uniswap V2 subgraph deployed on the Arbitrum network.
-The query URL is: https://gateway-arbitrum.network.thegraph.com/api/[GRAPH_API_KEY]/subgraphs/id/EYCKATKGBKLWvSfwvBjzfCBmGwYNdVkduYXVivCsLRFu
+UNISWAP_QUERY_URL: https://gateway-arbitrum.network.thegraph.com/api/[GRAPH_API_KEY]/subgraphs/id/EYCKATKGBKLWvSfwvBjzfCBmGwYNdVkduYXVivCsLRFu
 
 ## Querying the Uniswap Subgraph
 
@@ -27,7 +27,7 @@ To query the top 10 trades by volume on the Uniswap V2 subgraph, follow these st
 2. Sign up or log in.
 3. Create a new API key from your dashboard.
 
-### Installation
+## Installation
 
 1. **Clone the Repository**:
    ```bash
@@ -43,7 +43,7 @@ To query the top 10 trades by volume on the Uniswap V2 subgraph, follow these st
    - Edit the file in a notepad or similar text editor, adding your api key to the file, replacing the [GRAPH_API_KEY] placeholders.
    - Save the file.
   
-### Running the Script
+## Running the Script
 Run the script to query the subgraph and print the formatted results:
   ```bash
 node query.js

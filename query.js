@@ -1,5 +1,5 @@
 const axios = require('axios');
-require('dotenv').config(); // Make sure to install and configure dotenv if using environment variables
+require('dotenv').config();
 
 const query = `
   query TopTrades {
@@ -22,9 +22,12 @@ const query = `
 `;
 
 const fetchTopTrades = async () => {
+  const url = process.env.UNISWAP_SUBGRAPH_URL;
+  console.log('Constructed URL:', url);
+
   try {
     const response = await axios.post(
-      'https://gateway-arbitrum.network.thegraph.com/api/0e31621d68289e6c2350f520a2a1dbe2/subgraphs/id/EYCKATKGBKLWvSfwvBjzfCBmGwYNdVkduYXVivCsLRFu',
+      url,
       {
         query: query,
         variables: {}
@@ -32,6 +35,7 @@ const fetchTopTrades = async () => {
       {
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.GRAPH_API_KEY}` // Include if API key is needed
         }
       }
     );
@@ -53,6 +57,7 @@ const fetchTopTrades = async () => {
       console.log('---------------------------------------');
     });
   } catch (error) {
+    console.error('Error Details:', error);
     if (error.response) {
       console.error('Error Response:', error.response.data);
     } else if (error.request) {
