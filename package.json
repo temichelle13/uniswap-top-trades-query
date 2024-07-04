@@ -2,15 +2,24 @@
   "name": "uniswap-top-trades-query",
   "version": "1.0.0",
   "description": "This query retrieves the top 10 trades by volume on the Uniswap subgraph, providing insights into the most significant trades.",
-  "main": "index.js",
+  "main": "query.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node query.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Tea M. Larson-Hetrick",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.7.2",
-    "dotenv"
-  }
+    "dotenv": "^16.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temichelle13/uniswap-top-trades-query.git"
+  },
+  "bugs": {
+    "url": "https://github.com/temichelle13/uniswap-top-trades-query/issues"
+  },
+  "homepage": "https://github.com/temichelle13/uniswap-top-trades-query#readme"
 }
