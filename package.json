@@ -8,6 +8,17 @@
     "start": "node query.js"
   },
   "keywords": [],
+  "keywords": [
+    "uniswap",
+    "subgraph",
+    "query",
+    "top trades",
+    "volume",
+    "blockchain",
+    "defi",
+    "arbitrum",
+    "trading"
+  ],
   "author": "Tea M. Larson-Hetrick",
   "license": "MIT",
   "dependencies": {
