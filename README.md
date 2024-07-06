@@ -1,5 +1,5 @@
 # Uniswap Top Trades Query: Fetch and Analyze Top Trades on Arbitrumvv
-  
+
 This project contains a script to query the top 10 trades by volume on the Uniswap V2 subgraph using [The Graph API](https://thegraph.com/). This information can be used for market analysis, trading strategies, and understanding liquidity flows.
 
 ## Table of Contents
@@ -22,11 +22,13 @@ This project contains a script to query the top 10 trades by volume on the Unisw
 ## Project Overview
 
 This project provides a script to query and analyze the top 10 trades by volume on the Uniswap V2 platform deployed on the Arbitrum network. It leverages [The Graph API](https://thegraph.com/) to fetch data from the Uniswap V2 subgraph. The primary components of the project include:
+
 - **Node.js**: A JavaScript runtime used to run the script.
 - **Axios**: A promise-based HTTP client for making requests to The Graph API.
 - **Dotenv**: A module to manage environment variables securely.
 
 **Architecture Overview**:
+
 - **Script Execution**: Initiated by the user via a command-line interface.
 - **API Request**: Axios makes HTTP requests to The Graph API.
 - **Data Fetching**: The Graph API returns the top 10 trades data from the Uniswap V2 subgraph.
@@ -35,11 +37,13 @@ This project provides a script to query and analyze the top 10 trades by volume 
 ## Why This Query is Useful
 
 Analyzing the top trades by volume enables users to gain insights into the most significant transactions on the Uniswap V2 platform. This information is crucial for:
+
 - **Market Analysis**: Identifying trends and patterns in trading activity, which helps in understanding market dynamics and investor behavior.
 - **Trading Strategies**: Developing informed trading strategies by analyzing high-volume trades, which can indicate market sentiment and potential price movements.
 - **Liquidity Flows**: Monitoring the movement of liquidity within the Uniswap ecosystem, which is vital for assessing the health and efficiency of the market.
 
 **Real-World Example**:
+
 - A trader could use this data to identify large trades that may impact token prices and adjust their strategy accordingly.
 
 ## Subgraph to Query
@@ -51,19 +55,18 @@ You can explore the subgraph here: [Uniswap V2 Subgraph on Arbitrum](https://the
 To query this subgraph from the terminal, use the following URL:
 https://gateway-arbitrum.network.thegraph.com/api/[YOUR_API_KEY]/subgraphs/id/EYCKATKGBKLWvSfwvBjzfCBmGwYNdVkduYXVivCsLRFu
 
-
 ## Querying the Uniswap Subgraph
 
 ### Prerequisites
 
 Ensure you have the following prerequisites before running the script:
+
 - [Node.js](https://nodejs.org/) installed (version 12.x or higher recommended)
 - An internet connection to fetch data from The Graph
 - A Graph API key
 
 **Setting Up Node.js**:
 If you don't have Node.js installed, follow [this guide](https://nodejs.org/en/download/package-manager/) to set it up for your operating system.
-
 
 ### Getting an API Key
 
@@ -72,6 +75,7 @@ If you don't have Node.js installed, follow [this guide](https://nodejs.org/en/d
 3. Navigate to your dashboard and create a new API key. Copy this key for use in our query. It will remain on your dashboard until you delete it, ensuring easy access if you forget or lose it. You can also create another one if needed.
 
 **Screenshots**:
+
 - ![connect-wallet](image.png)
 - ![create-api-key-screen](image_2.png)
 
@@ -81,28 +85,33 @@ If you don't have Node.js installed, follow [this guide](https://nodejs.org/en/d
 
 1. **Clone the Repository**:
    Open your terminal and run the following commands:
+
 ```bash
 git clone https://github.com/temichelle13/uniswap-top-trades-query
 cd uniswap-top-trades-query
 ```
+
 **Note**: This will clone the repository to your local machine and navigate into the project's root directory.
 
 2. **Install Dependencies**:
+
 ```bash
 npm install axios dotenv
-``` 
+```
+
 This command installs the necessary dependencies: `axios` for HTTP requests and `dotenv` for environment variable management.
 
 **Note**: Ensure you run these commands from the root directory of the cloned repository, which we navigated to it the previous step.
 
-
 ## Set Up Environment Variables
 
 1. **Rename the Environment File**:
+
    - Locate the `.env.example` file in the root directory of your project.
    - Rename this file to `.env`.
 
 2. **Edit the Environment File**:
+
    - Open the `.env` file using a text editor such as Notepad, VS Code, or any other editor of your choice.
    - Replace the placeholder `[GRAPH_API_KEY]` with your actual API key. Ensure there are no spaces around the equal sign and that the key is accurately copied.
 
@@ -113,28 +122,33 @@ This command installs the necessary dependencies: `axios` for HTTP requests and 
 Environment variables allow you to manage configuration settings and sensitive information, like API keys, securely and separately from your source code. This helps to keep your private information and assets safe.
 
 **Sample .env File**:
+
 ```bash
 GRAPH_API_KEY=your_api_key_here
 ```
+
 ## Running the Script
 
 Execute the following command to run the script and fetch the top 10 trades by volume from the Uniswap V2 subgraph:
+
 ```bash
 node query.js
 ```
+
 The script will output details of the top trades, including trade IDs, transaction IDs, amounts in USD, and trading pairs.
 
 **Interpreting the Results**:
+
 - **Trade ID**: Unique identifier for each trade.
 - **Transaction ID**: Identifier for the transaction containing the trade.
 - **Amount (USD)**: Value of the trade in USD.
 - **Pair**: The trading pair involved in the trade.
 
 **Performance Considerations**:
+
 - The script execution time may vary based on network speed and the size of the data fetched.
 
-  
-### *Example Query*
+### _Example Query_
 
 ```bash
 query TopTrades {
@@ -213,6 +227,7 @@ Trade ID: 0x97a6234a8eb09a6f193d1488e94c2262a8e7ee34b0e84afdbdbbe7e2bc1b7739-0
   Pair: $MONG / MING
 ---------------------------------------
 ```
+
 ## Error Handling and Troubleshooting
 
 ### Common Errors
@@ -228,6 +243,7 @@ Trade ID: 0x97a6234a8eb09a6f193d1488e94c2262a8e7ee34b0e84afdbdbbe7e2bc1b7739-0
 - Reinstall dependencies if issues persist.
 
 **Additional Resources**:
+
 - [The Graph API Documentation](https://thegraph.com/docs/)
 - [Node.js Troubleshooting Guide](https://nodejs.org/en/docs/guides/debugging-getting-started/)
 
@@ -238,6 +254,7 @@ Trade ID: 0x97a6234a8eb09a6f193d1488e94c2262a8e7ee34b0e84afdbdbbe7e2bc1b7739-0
 To customize the query, edit the `queryTopTrades.js` file. For example, to fetch trades for a different token pair, modify the GraphQL query string accordingly.
 
 **Example**:
+
 ```bash
 const query = `
 {
@@ -262,6 +279,7 @@ const query = `
 ### Integration with Other Services
 
 You can extend this project by integrating it with other services such as:
+
 - **[Slack](https://slack.com/)**: Send trade alerts to a Slack channel.
 - **Database**: Store trade data in a database for further analysis.
 
@@ -286,6 +304,7 @@ Refer to our [Contributing Guide](CONTRIBUTING.md) for more details on how to co
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 **Summary**:
+
 - You are free to use, modify, and distribute this project.
 - Please include attribution to the original author.
 
@@ -295,8 +314,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [Node.js Documentation](https://nodejs.org/en/docs/)
 - [Axios GitHub Repository](https://github.com/axios/axios)
 - [Dotenv GitHub Repository](https://github.com/motdotla/dotenv)
-                             
+
 **Additional Resources**:
+
 - [Uniswap Documentation](https://uniswap.org/docs/)
 - [GraphQL Documentation](https://graphql.org/learn/)
 - [Arbitrum](https://arbitrum.io/)
