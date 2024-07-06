@@ -65,7 +65,7 @@ Ensure you have the following prerequisites before running the script:
 If you don't have Node.js installed, follow [this guide](https://nodejs.org/en/download/package-manager/) to set it up for your operating system.
 
 
-## Getting an API Key
+### Getting an API Key
 
 1. Visit [The Graph's Explorer](https://thegraph.com/explorer/).
 2. Sign up or log in by selecting the "connect wallet" button in the top right corner of the page to connect your Web3 or Cryptocurrency wallet such as [Coinbase Wallet](https://www.coinbase.com/), [MetaMask](https://portfolio.metamask.io/), [Safe](https://app.safe.global/welcome), or [WalletConnet](https://explorer.walletconnect.com/).
