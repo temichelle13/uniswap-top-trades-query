@@ -1,4 +1,4 @@
-# Uniswap Top Trades Query: Fetch and Analyze Top Trades on Arbitrumvv
+# Uniswap Top Trades Query: Fetch and Analyze Top Trades on Arbitrum
   
 This project contains a script to query the top 10 trades by volume on the Uniswap V2 subgraph using [The Graph API](https://thegraph.com/). This information can be used for market analysis, trading strategies, and understanding liquidity flows.
 
