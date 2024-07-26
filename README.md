@@ -300,3 +300,16 @@ Refer to our [Contributing Guide](CONTRIBUTING.md) for more details on how to co
 - [MetaMask](https://portfolio.metamask.io/)
 - [Safe](https://app.safe.global/welcome)
 - [WalletConnect](https://explorer.walletconnect.com/)
+
+## Additional Notes
+
+This project demonstrates how to interact with The Graph's GraphQL endpoint to fetch data from a subgraph. The provided query fetches the top 10 trades by volume from the Uniswap V2 subgraph on the Arbitrum network.
+
+## Dependencies
+
+- `axios:` A promise-based HTTP client for Node.js
+- `dotenv:` Module to load environment variables from a .env file
+
+## Repository
+
+Visit the GitHub repository to explore the project.
